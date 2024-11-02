@@ -1,3 +1,7 @@
-h1{
-    color:yellow
+*{
+    margin:0px;
+    padding:0px;
+}
+.d-block{
+    height:400px;
 }
