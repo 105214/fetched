@@ -25,4 +25,23 @@ product += `<div class="col-md-3 col-sm-12 col-lg-4">
 productBox.innerHTML=product
            })
 
-            
+   function search(){
+    let searchValue=document.getElementById('search-box').value.trim().toLowerCase()
+    let product_box=document.getElementById('product-box')
+    let product=document.querySelectorAll('.card')
+    let pname=document.getElementsByTagName('h5')
+          
+    for(i=0;i<pname.length;i++){
+      let match=product[i].getElementsByTagName('h5')[0]
+
+      if(match){
+        let boxvalue=match.textContent||match.innerHTML
+        if(boxvalue.toLowerCase().indexOf(searchValue)>-1){
+          product[i].style.display=""
+        }else{
+          product[i].style.display="none"
+        }
+      }
+    }
+          
+          } 
