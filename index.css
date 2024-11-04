@@ -5,3 +5,16 @@
 .d-block{
     height:400px;
 }
+.card img{
+    height:150px;
+    width:100px;
+}
+.card{
+    display:flex;
+    align-items:center;
+}
+.card-body{
+    display:flex;
+    align-items:center;
+    flex-direction: column; 
+}
